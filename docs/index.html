@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>蛍光灯・電球の LED 交換ノート</title>
+<meta name="description" content="自宅の電球・丸形蛍光灯・直管蛍光灯を LED に替えるための注意点、メリット・デメリット、LED の基礎知識を出典つきでまとめたメモ。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="index.html">
+      <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path class="svg-stroke-accent" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.6 10.8c.8.6 1.1 1.4 1.1 2.2h5c0-.8.3-1.6 1.1-2.2A6 6 0 0 0 12 3z"/></svg>
+      蛍光灯・電球の LED 交換ノート
+    </a>
+    <nav class="site-nav" aria-label="ページ一覧">
+      <ul>
+        <li><a href="index.html" aria-current="page">トップ</a></li>
+        <li><a href="merit.html">メリット・デメリット</a></li>
+        <li><a href="bulb.html">電球</a></li>
+        <li><a href="circular.html">丸形蛍光灯</a></li>
+        <li><a href="straight.html">直管蛍光灯</a></li>
+        <li><a href="basics.html">LED の基礎知識</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <h1>蛍光灯と電球を LED に替える前に知っておくこと</h1>
+  <p class="lead">自宅にある電球（通常サイズ・ミニ）、丸形蛍光灯、直管蛍光灯（棒状の蛍光灯）を LED に替えるために、交換するときの注意点、LED にするメリット・デメリット、LED の基礎知識を調べてまとめました。</p>
+  <p class="updated">2026年11月13日時点の情報です。事実には出典の番号を付け、推測には「（推測）」と書いています。</p>
+
+  <h2>まず押さえておきたい 3 つのこと</h2>
+
+  <h3>1. 蛍光ランプは作られなくなっていく（今あるものは使い続けてよい）</h3>
+  <p>水銀に関する水俣条約にもとづき、日本でも一般照明用の蛍光ランプは種類ごとに製造と輸出入が禁止されます。<strong>電球形は 2026年1月1日から</strong>（30W を超えるものは 2027年1月1日から）、<strong>直管形と環形（丸形）は 2028年1月1日から</strong>です。直管形・環形のうち、ハロりん酸塩を主成分とする蛍光体を使ったものは 2027年1月1日からです<sup class="ref"><a href="#s1">[1]</a></sup>。</p>
+
+  <figure>
+    <svg viewBox="0 0 720 240" role="img" aria-labelledby="tl-title tl-desc">
+      <title id="tl-title">蛍光ランプの製造・輸出入禁止の時期</title>
+      <desc id="tl-desc">2026年1月に電球形（30W以下）、2027年1月に電球形（30W超）とコンパクト形とハロりん酸塩の直管形・環形、2028年1月にそれ以外の直管形・環形の製造と輸出入が禁止される。いまは2026年11月。</desc>
+      <line x1="40" y1="120" x2="690" y2="120" class="svg-stroke-muted" stroke-width="2"/>
+      <path d="M690 114 L702 120 L690 126 Z" class="svg-fill-muted"/>
+      <g class="svg-stroke-muted" stroke-width="2">
+        <line x1="60" y1="114" x2="60" y2="126"/>
+        <line x1="210" y1="114" x2="210" y2="126"/>
+        <line x1="360" y1="114" x2="360" y2="126"/>
+        <line x1="510" y1="114" x2="510" y2="126"/>
+        <line x1="660" y1="114" x2="660" y2="126"/>
+      </g>
+      <g class="svg-muted" font-size="13">
+        <text x="66" y="142">2025年</text>
+        <text x="216" y="142">2026年</text>
+        <text x="366" y="142">2027年</text>
+        <text x="516" y="142">2028年</text>
+        <text x="666" y="142">2029年</text>
+      </g>
+      <!-- 2026年1月 -->
+      <rect x="140" y="28" width="140" height="58" rx="8" class="svg-fill-accent-soft"/>
+      <text x="210" y="50" text-anchor="middle" font-size="13" font-weight="700" class="svg-accent">2026年1月〜</text>
+      <text x="210" y="72" text-anchor="middle" font-size="13" class="svg-text">電球形（30W 以下）</text>
+      <line x1="210" y1="86" x2="210" y2="113" class="svg-stroke-accent" stroke-width="2"/>
+      <!-- 2027年1月 -->
+      <rect x="250" y="160" width="220" height="74" rx="8" class="svg-fill-accent-soft"/>
+      <text x="360" y="181" text-anchor="middle" font-size="13" font-weight="700" class="svg-accent">2027年1月〜</text>
+      <text x="360" y="202" text-anchor="middle" font-size="13" class="svg-text">電球形（30W 超）・コンパクト形</text>
+      <text x="360" y="223" text-anchor="middle" font-size="13" class="svg-text">ハロりん酸塩の直管形・環形</text>
+      <line x1="360" y1="127" x2="360" y2="160" class="svg-stroke-accent" stroke-width="2"/>
+      <!-- 2028年1月 -->
+      <rect x="420" y="28" width="180" height="58" rx="8" class="svg-fill-accent-soft"/>
+      <text x="510" y="50" text-anchor="middle" font-size="13" font-weight="700" class="svg-accent">2028年1月〜</text>
+      <text x="510" y="72" text-anchor="middle" font-size="13" class="svg-text">直管形・環形（上記以外）</text>
+      <line x1="510" y1="86" x2="510" y2="113" class="svg-stroke-accent" stroke-width="2"/>
+      <g class="svg-fill-accent">
+        <circle cx="210" cy="120" r="7"/>
+        <circle cx="360" cy="120" r="7"/>
+        <circle cx="510" cy="120" r="7"/>
+      </g>
+      <!-- いま -->
+      <line x1="340" y1="98" x2="340" y2="142" class="svg-stroke-cool" stroke-width="2" stroke-dasharray="4 3"/>
+      <text x="340" y="78" text-anchor="middle" font-size="12" font-weight="700" class="svg-cool">いま</text>
+      <text x="340" y="93" text-anchor="middle" font-size="12" class="svg-cool">2026年11月</text>
+    </svg>
+    <figcaption>蛍光ランプの製造・輸出入が禁止される時期（環境省の資料<sup class="ref"><a href="#s1">[1]</a></sup>をもとに作図）。禁止されるのは製造と輸出入で、<strong>使用・販売・購入は禁止されません</strong><sup class="ref"><a href="#s1">[1]</a></sup>。</figcaption>
+  </figure>
+
+  <p>つまり、今ある蛍光灯がすぐに使えなくなるわけではありません。ただ、国内メーカーは蛍光ランプ用の照明器具の製造販売をすでに終えています<sup class="ref"><a href="#s2">[2]</a></sup>。替えのランプも、在庫が減るにつれて手に入りにくく、選びにくくなっていくと考えられます（推測）。</p>
+
+  <h3>2. 蛍光灯は「器具ごと交換」が基本</h3>
+  <p>蛍光灯を LED にする方法は、<strong>照明器具ごと交換する方法</strong>と、<strong>器具はそのままで蛍光ランプを LED ランプに替える方法</strong>の 2 つです<sup class="ref"><a href="#s2">[2]</a></sup>。後者は器具とランプの組み合わせを間違えると発煙・発火につながり、実際に火災の事故が起きています<sup class="ref"><a href="#s2">[2]</a></sup>。日本照明工業会とメーカーは、古い器具はランプだけでなく器具ごと LED 照明に交換することを勧めています<sup class="ref"><a href="#s3">[3]</a><a href="#s4">[4]</a></sup>。</p>
+
+  <h3>3. 電球は「口金・明るさ・光の色・器具の条件」を合わせれば差し替えられる</h3>
+  <p>電球形 LED ランプは、今の器具の口金と同じなら取り付けられます。ただし、調光機能の付いた器具、密閉形の器具、センサー付きの器具、断熱材施工の器具などでは、対応した製品でないと使えません<sup class="ref"><a href="#s5">[5]</a></sup>。</p>
+
+  <h2>3 系統ごとの替え方（早見表）</h2>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th scope="col">自宅の照明</th><th scope="col">おすすめの替え方</th><th scope="col">自分でできるか</th><th scope="col">特に注意すること</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">電球<br><span class="small">通常サイズ・ミニ</span></th>
+          <td>LED 電球に差し替える</td>
+          <td><span class="tag ok">できる</span><br>電源を切り、電球が冷めてから</td>
+          <td>口金（E26／E17）と明るさ（lm）を合わせる。密閉形・断熱材施工・調光・センサー付きの器具は対応品が必要<sup class="ref"><a href="#s5">[5]</a><a href="#s6">[6]</a></sup></td>
+        </tr>
+        <tr>
+          <th scope="row">丸形蛍光灯</th>
+          <td>器具ごと LED シーリングライトなどに替える</td>
+          <td><span class="tag ok">配線器具があればできる</span><br>天井に引掛シーリングなどが無ければ電気工事<sup class="ref"><a href="#s2">[2]</a></sup></td>
+          <td>ランプだけ替える方法は、不適切な交換による事故が環形（丸形）で最も多い<sup class="ref"><a href="#s2">[2]</a></sup></td>
+        </tr>
+        <tr>
+          <th scope="row">直管蛍光灯<br><span class="small">棒状の蛍光灯</span></th>
+          <td>器具ごと LED 器具に替える</td>
+          <td><span class="tag warn">多くは電気工事</span><br>天井・壁の配線に直接つながっている器具は工事が必要<sup class="ref"><a href="#s2">[2]</a><a href="#s4">[4]</a></sup></td>
+          <td>ランプだけ替える場合は点灯方式に合ったランプを選ぶ。安定器を外す工事は電気工事士の資格が必要<sup class="ref"><a href="#s2">[2]</a></sup></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="small">「多くは電気工事」は、住宅の直管蛍光灯器具は配線に直接つながっているものが多いという見立てです（推測）。自宅の器具が配線器具に差し込むタイプかどうかで変わります。</p>
+
+  <h2>ページ一覧</h2>
+  <ul class="cards">
+    <li><a class="card" href="merit.html"><span class="label">MERIT</span><span class="name">LED にするメリット・デメリット</span><span class="desc">電気代・寿命・熱・器具との相性。電気代の計算もできます。</span></a></li>
+    <li><a class="card" href="bulb.html"><span class="label">BULB</span><span class="name">電球（通常サイズ・ミニ）</span><span class="desc">口金・明るさ・光の色・光の広がり・使えない器具。</span></a></li>
+    <li><a class="card" href="circular.html"><span class="label">CIRCULAR</span><span class="name">丸形蛍光灯</span><span class="desc">器具ごと交換と、ランプだけ交換の違いと注意点。</span></a></li>
+    <li><a class="card" href="straight.html"><span class="label">STRAIGHT</span><span class="name">直管蛍光灯（棒状）</span><span class="desc">点灯方式の見分け方、工事が必要なケース、事故の例。</span></a></li>
+    <li><a class="card" href="basics.html"><span class="label">BASICS</span><span class="name">LED の基礎知識</span><span class="desc">lm・K・Ra の意味、寿命の考え方、捨て方。</span></a></li>
+  </ul>
+
+  <section class="sources" aria-labelledby="src-h">
+    <h2 id="src-h">出典</h2>
+    <ol>
+      <li id="s1">環境省「蛍光ランプの製造・輸出入の規制」に関する案内ページ（水銀対策）。<a href="https://www.env.go.jp/chemi/tmms/lamp.html">https://www.env.go.jp/chemi/tmms/lamp.html</a></li>
+      <li id="s2">製品評価技術基盤機構（NITE）「PS マガジン VOL.475　照明器具の不適切なランプ交換による事故」2025年4月22日。<a href="https://www.nite.go.jp/data/000157618.pdf">https://www.nite.go.jp/data/000157618.pdf</a></li>
+      <li id="s3">日本照明工業会 LED 照明ナビ「照明器具の点検と交換について」。<a href="https://www.jlma.or.jp/led-navi/contents/cont13a_checkAndChange.htm">https://www.jlma.or.jp/led-navi/contents/cont13a_checkAndChange.htm</a></li>
+      <li id="s4">パナソニック「蛍光灯から LED への交換」の案内ページ。<a href="https://panasonic.jp/lamp/replace-led.html">https://panasonic.jp/lamp/replace-led.html</a></li>
+      <li id="s5">日本照明工業会「電球形 LED ランプ」解説冊子（2020年10月1日）。<a href="https://www.jlma.or.jp/led/guide/pdf/guide_led.pdf">https://www.jlma.or.jp/led/guide/pdf/guide_led.pdf</a></li>
+      <li id="s6">パナソニック「LED 電球の選び方」。<a href="https://panasonic.jp/lamp/select_led.html">https://panasonic.jp/lamp/select_led.html</a></li>
+    </ol>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="inner">
+    <p>自宅の照明を LED に替えるために調べた内容をまとめた個人のメモです。情報は 2026年11月13日時点のものです。</p>
+    <p>実際に買う・取り付けるときは、ランプのパッケージと器具の取扱説明書の表示を必ず確認してください。配線を伴う作業は電気工事士の資格が必要です。</p>
+    <p><a href="https://github.com/mrgarita/fl2led">GitHub リポジトリ</a></p>
+  </div>
+</footer>
+</body>
+</html>

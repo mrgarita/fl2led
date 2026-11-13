@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LED の基礎知識｜LED 交換ノート</title>
+<meta name="description" content="lm・K・Ra の意味、LED と照明器具の寿命の考え方、蛍光ランプの規制、使い終わったランプの捨て方。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="inner">
+    <a class="brand" href="index.html">
+      <svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path class="svg-stroke-accent" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3.6 10.8c.8.6 1.1 1.4 1.1 2.2h5c0-.8.3-1.6 1.1-2.2A6 6 0 0 0 12 3z"/></svg>
+      蛍光灯・電球の LED 交換ノート
+    </a>
+    <nav class="site-nav" aria-label="ページ一覧">
+      <ul>
+        <li><a href="index.html">トップ</a></li>
+        <li><a href="merit.html">メリット・デメリット</a></li>
+        <li><a href="bulb.html">電球</a></li>
+        <li><a href="circular.html">丸形蛍光灯</a></li>
+        <li><a href="straight.html">直管蛍光灯</a></li>
+        <li><a href="basics.html" aria-current="page">LED の基礎知識</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <h1>LED の基礎知識</h1>
+  <p class="lead">LED 照明を選ぶときに出てくる単位や言葉、寿命の考え方、蛍光ランプの規制、捨て方をまとめます。</p>
+
+  <h2>LED 電球のしくみ</h2>
+  <p>LED（Light Emitting Diode）は「光る半導体」です<sup class="ref"><a href="#s1">[1]</a></sup>。電球形 LED ランプは、LED モジュールと点灯回路を一体にして、白熱電球と同じ口金を付けたものです。LED は直流で点灯するので、家庭の交流を直流に変える点灯回路が入っています。LED モジュールも熱を出すため、本体にはアルミなど熱を逃がしやすい材料が使われています<sup class="ref"><a href="#s1">[1]</a></sup>。熱がこもる器具に対応品が必要なのはこのためです。</p>
+
+  <h2 id="color">明るさ・光の色・色の見え方</h2>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th scope="col">項目</th><th scope="col">単位・記号</th><th scope="col">意味</th></tr>
+      </thead>
+      <tbody>
+        <tr><th scope="row">全光束</th><td>lm（ルーメン）</td><td>ランプから出る光の量。数値が大きいほど明るい<sup class="ref"><a href="#s1">[1]</a><a href="#s2">[2]</a></sup>。「○○形相当」の基準は<a href="bulb.html">電球のページ</a>の表を参照</td></tr>
+        <tr><th scope="row">色温度</th><td>K（ケルビン）</td><td>光の色を数値で表したもの。低いほどオレンジがかった暖かい色、高いほど青白い色になる<sup class="ref"><a href="#s1">[1]</a></sup></td></tr>
+        <tr><th scope="row">演色性</th><td>Ra</td><td>照らしたものの色が自然に見えるかを表す数値。一般に Ra90 以上で演色性が高いとされる<sup class="ref"><a href="#s3">[3]</a></sup></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <figure>
+    <svg viewBox="0 0 680 180" role="img" aria-labelledby="ct-title ct-desc">
+      <title id="ct-title">光の色と色温度の範囲</title>
+      <desc id="ct-desc">色温度が低いほどオレンジ、高いほど青白い。電球色は 2600〜3250K、昼白色は 4600〜5500K、昼光色は 5700〜7100K。</desc>
+      <defs>
+        <linearGradient id="ct-grad" x1="0" x2="1" y1="0" y2="0">
+          <stop offset="0" stop-color="#ff9f45"/>
+          <stop offset="0.1" stop-color="#ffb46b"/>
+          <stop offset="0.3" stop-color="#ffd1a3"/>
+          <stop offset="0.5" stop-color="#ffe4ce"/>
+          <stop offset="0.7" stop-color="#fff3ef"/>
+          <stop offset="1" stop-color="#e3ebff"/>
+        </linearGradient>
+      </defs>
+      <!-- 区分 -->
+      <g class="svg-stroke" stroke-width="1.5">
+        <path d="M52.4 52 V46 H133 V52"/>
+        <path d="M300.4 52 V46 H412 V52"/>
+        <path d="M436.8 52 V46 H610.4 V52"/>
+      </g>
+      <g font-size="14" font-weight="700" text-anchor="middle" class="svg-text">
+        <text x="92.7" y="36">電球色</text>
+        <text x="356.2" y="36">昼白色</text>
+        <text x="523.6" y="36">昼光色</text>
+      </g>
+      <rect x="40" y="58" width="620" height="34" rx="6" fill="url(#ct-grad)" class="svg-stroke-muted" stroke-width="1"/>
+      <g font-size="12" text-anchor="middle" class="svg-text">
+        <text x="92.7" y="114">2,600〜3,250K</text>
+        <text x="356.2" y="114">4,600〜5,500K</text>
+        <text x="523.6" y="114">5,700〜7,100K</text>
+      </g>
+      <g class="svg-stroke-muted" stroke-width="1">
+        <line x1="102" y1="92" x2="102" y2="98"/>
+        <line x1="226" y1="92" x2="226" y2="98"/>
+        <line x1="350" y1="92" x2="350" y2="98"/>
+        <line x1="474" y1="92" x2="474" y2="98"/>
+        <line x1="598" y1="92" x2="598" y2="98"/>
+      </g>
+      <g font-size="11" text-anchor="middle" class="svg-muted">
+        <text x="102" y="136">3,000K</text>
+        <text x="226" y="136">4,000K</text>
+        <text x="350" y="136">5,000K</text>
+        <text x="474" y="136">6,000K</text>
+        <text x="598" y="136">7,000K</text>
+      </g>
+      <text x="40" y="166" font-size="12" class="svg-muted">← 暖かい色（オレンジ）</text>
+      <text x="660" y="166" font-size="12" text-anchor="end" class="svg-muted">涼しい色（青白い）→</text>
+    </svg>
+    <figcaption>光の色と色温度（範囲は日本照明工業会の冊子<sup class="ref"><a href="#s1">[1]</a></sup>から。帯の色は見た目の目安）。このほか、電球色と昼白色のあいだに温白色・白色があり、LED 電球の形式では L（電球色）・WW（温白色）・W（白色）・N（昼白色）・D（昼光色）の記号で表します<sup class="ref"><a href="#s1">[1]</a></sup>。</figcaption>
+  </figure>
+
+  <h2 id="life">寿命の考え方</h2>
+  <h3>LED 電球の「寿命」は、暗くなるまでの時間</h3>
+  <p>電球形 LED ランプの定格寿命は、「光束が初期光束の 70% 以上を維持している期間」と定義されています<sup class="ref"><a href="#s1">[1]</a></sup>。つまり、寿命は突然消えるまでの時間ではなく、明るさが 7 割に下がるまでの時間の目安です。</p>
+
+  <h3>器具には「適正交換時期」と「耐用の限度」がある</h3>
+  <p>日本照明工業会は、LED を光源にした照明器具でも「器具が長寿命」という表現は適切でないとしています。光源は長寿命になったものの、回路部品の故障寿命は大きくは変わらないことが多いためです。よく聞く 40,000 時間は、照明器具の安全規格（JIS C 8105-1）が電気絶縁材料の性能の限界としている時間です<sup class="ref"><a href="#s4">[4]</a></sup>。</p>
+  <p>そこで器具については「寿命」という言葉を避け、次の 2 つの年数で表すことにしています<sup class="ref"><a href="#s4">[4]</a></sup>。</p>
+  <figure>
+    <svg viewBox="0 0 680 140" role="img" aria-labelledby="life-title life-desc">
+      <title id="life-title">照明器具の適正交換時期と耐用の限度</title>
+      <desc id="life-desc">設置から8〜10年が適正交換時期、15年が耐用の限度。</desc>
+      <rect x="40" y="44" width="300" height="28" class="svg-fill-ok-soft"/>
+      <rect x="340" y="44" width="75" height="28" class="svg-fill-accent-soft"/>
+      <rect x="415" y="44" width="187.5" height="28" class="svg-fill-warn-soft"/>
+      <rect x="602.5" y="44" width="37.5" height="28" class="svg-fill-warn-soft"/>
+      <rect x="601" y="36" width="3" height="44" class="svg-warn"/>
+      <text x="377.5" y="30" text-anchor="middle" font-size="13" font-weight="700" class="svg-accent">適正交換時期（8〜10年）</text>
+      <text x="602.5" y="30" text-anchor="middle" font-size="13" font-weight="700" class="svg-warn">耐用の限度（15年）</text>
+      <g class="svg-stroke-muted" stroke-width="1.5">
+        <line x1="40" y1="72" x2="40" y2="82"/>
+        <line x1="227.5" y1="72" x2="227.5" y2="82"/>
+        <line x1="340" y1="72" x2="340" y2="82"/>
+        <line x1="415" y1="72" x2="415" y2="82"/>
+      </g>
+      <g font-size="12" text-anchor="middle" class="svg-muted">
+        <text x="40" y="100">0年</text>
+        <text x="227.5" y="100">5年</text>
+        <text x="340" y="100">8年</text>
+        <text x="415" y="100">10年</text>
+        <text x="602.5" y="100">15年</text>
+      </g>
+      <text x="340" y="128" text-anchor="middle" font-size="12" class="svg-muted">設置してからの年数</text>
+    </svg>
+    <figcaption>照明器具の耐用年限（日本照明工業会<sup class="ref"><a href="#s4">[4]</a></sup>をもとに作図）。どちらも想定した使用条件での計算上の年数で、実際には周りの温度・湿度・ほこりなどで大きく変わります<sup class="ref"><a href="#s4">[4]</a></sup>。</figcaption>
+  </figure>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th scope="col">年数</th><th scope="col">意味</th></tr>
+      </thead>
+      <tbody>
+        <tr><th scope="row">適正交換時期<br>8〜10 年</th><td>器具の劣化が進み、故障率が増え始める段階。住宅では 1 部屋に 1 台のことが多く、急な故障で生活に困るため、この時期以降の交換が勧められる<sup class="ref"><a href="#s4">[4]</a></sup></td></tr>
+        <tr><th scope="row">耐用の限度<br>15 年</th><td>機能の低下や劣化が進み、故障の有無に関係なく、安全のためにすべての器具の交換が必要になる年限<sup class="ref"><a href="#s4">[4]</a></sup></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>器具の製造年は銘板（ラベル）で確かめます。1 年に 1 回は点検するとよいとされています<sup class="ref"><a href="#s5">[5]</a></sup>。</p>
+
+  <h2>蛍光ランプの規制</h2>
+  <p>水銀に関する水俣条約にもとづき、一般照明用の蛍光ランプは種類ごとに製造・輸出入が禁止されます。<strong>使用・販売・購入は禁止されません</strong><sup class="ref"><a href="#s6">[6]</a></sup>。</p>
+  <div class="table-wrap">
+    <table>
+      <caption>環境省の案内ページ<sup class="ref"><a href="#s6">[6]</a></sup>から。</caption>
+      <thead>
+        <tr><th scope="col">蛍光ランプの種類</th><th scope="col">製造・輸出入の禁止</th></tr>
+      </thead>
+      <tbody>
+        <tr><th scope="row">電球形</th><td>2026年1月1日から（30W を超えるものは 2027年1月1日から）</td></tr>
+        <tr><th scope="row">コンパクト形</th><td>2027年1月1日から</td></tr>
+        <tr><th scope="row">直管形</th><td>2028年1月1日から（ハロりん酸塩を主成分とする蛍光体のものは 2027年1月1日から）</td></tr>
+        <tr><th scope="row">環形（丸形）</th><td>2028年1月1日から（ハロりん酸塩を主成分とする蛍光体のものは 2027年1月1日から）</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>使い終わったランプの捨て方</h2>
+  <p>捨て方は自治体ごとに違うので、住んでいる市区町村の分別の案内で確かめます。ここでは例として神戸市の案内を挙げます<sup class="ref"><a href="#s7">[7]</a></sup>。</p>
+  <ul>
+    <li><strong>蛍光管</strong>：割れないように、買ったときの箱などに入れるか新聞紙などで包む。協力店の回収ボックスに入れるか、店頭で預ける<sup class="ref"><a href="#s7">[7]</a></sup>。</li>
+    <li><strong>割れた蛍光管</strong>：紙に包み、外から分かるように指定袋に「キケン」と貼って、燃えないごみに出す<sup class="ref"><a href="#s7">[7]</a></sup>。</li>
+    <li><strong>LED 製品・白熱電球・点灯管（グロー球）</strong>：水銀を含まないランプ類として、蛍光管の回収の対象外。「蛍光灯型 LED」などと書かれた LED 製品は燃えないごみ<sup class="ref"><a href="#s7">[7]</a></sup>。</li>
+  </ul>
+
+  <h2>用語のまとめ</h2>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th scope="col">用語</th><th scope="col">意味</th></tr>
+      </thead>
+      <tbody>
+        <tr><th scope="row">口金</th><td>電球を器具に取り付ける金属の部分。E26・E17 などの種類があり、口金の直径で見分ける<sup class="ref"><a href="#s2">[2]</a></sup>。E の後ろの数字がおおよその直径（mm）</td></tr>
+        <tr><th scope="row">配光</th><td>光の広がり方。全般配光形は 180° 以上、準全般配光形は 90° 以上 180° 未満<sup class="ref"><a href="#s1">[1]</a></sup></td></tr>
+        <tr><th scope="row">密閉形器具</th><td>電球がカバーで覆われ、熱がこもりやすい器具（浴室灯・玄関灯など）<sup class="ref"><a href="#s2">[2]</a><a href="#s5">[5]</a></sup></td></tr>
+        <tr><th scope="row">断熱材施工器具</th><td>天井の断熱材の中に入れて使うダウンライトなど。SB・SGⅠ・SG の表示がある<sup class="ref"><a href="#s1">[1]</a></sup></td></tr>
+        <tr><th scope="row">点灯管・安定器</th><td>蛍光灯を点けるための部品。詳しくは<a href="straight.html#method">直管蛍光灯のページ</a></td></tr>
+        <tr><th scope="row">引掛シーリング</th><td>天井に付いている、シーリングライトを工事なしで取り付けるための配線器具。詳しくは<a href="circular.html">丸形蛍光灯のページ</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="next">
+    <a href="merit.html">メリット・デメリット →</a>
+    <a href="bulb.html">電球 →</a>
+    <a href="index.html">トップへ</a>
+  </div>
+
+  <section class="sources" aria-labelledby="src-h">
+    <h2 id="src-h">出典</h2>
+    <ol>
+      <li id="s1">日本照明工業会「電球形 LED ランプ」解説冊子（2020年10月1日）。第 1・2 章、第 5 章（Q&amp;A）、参考 1（形式）。<a href="https://www.jlma.or.jp/led/guide/pdf/guide_led.pdf">https://www.jlma.or.jp/led/guide/pdf/guide_led.pdf</a></li>
+      <li id="s2">パナソニック「LED 電球の選び方」。<a href="https://panasonic.jp/lamp/select_led.html">https://panasonic.jp/lamp/select_led.html</a></li>
+      <li id="s3">パナソニック「映光色」の案内ページ（演色評価数 Ra の説明）。<a href="https://www2.panasonic.biz/jp/lighting/brand/eikoshoku/">https://www2.panasonic.biz/jp/lighting/brand/eikoshoku/</a></li>
+      <li id="s4">日本照明工業会「照明器具の寿命表記について」2024年7月26日。<a href="https://jlma.or.jp/info/files/240726_LifespanOfLightingFixtures.pdf">https://jlma.or.jp/info/files/240726_LifespanOfLightingFixtures.pdf</a></li>
+      <li id="s5">日本照明工業会 LED 照明ナビ「照明器具の点検と交換について」。<a href="https://www.jlma.or.jp/led-navi/contents/cont13a_checkAndChange.htm">https://www.jlma.or.jp/led-navi/contents/cont13a_checkAndChange.htm</a></li>
+      <li id="s6">環境省「蛍光ランプの製造・輸出入の規制」に関する案内ページ。<a href="https://www.env.go.jp/chemi/tmms/lamp.html">https://www.env.go.jp/chemi/tmms/lamp.html</a></li>
+      <li id="s7">神戸市「蛍光管」の出し方。<a href="https://www.city.kobe.lg.jp/a04164/kurashi/recycle/gomi/dashikata/bunbetsukubun/keikoukan.html">https://www.city.kobe.lg.jp/a04164/kurashi/recycle/gomi/dashikata/bunbetsukubun/keikoukan.html</a></li>
+    </ol>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="inner">
+    <p>自宅の照明を LED に替えるために調べた内容をまとめた個人のメモです。情報は 2026年11月13日時点のものです。</p>
+    <p>実際に買う・取り付けるときは、ランプのパッケージと器具の取扱説明書の表示を必ず確認してください。配線を伴う作業は電気工事士の資格が必要です。</p>
+    <p><a href="https://github.com/mrgarita/fl2led">GitHub リポジトリ</a></p>
+  </div>
+</footer>
+</body>
+</html>
