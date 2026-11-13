@@ -256,7 +256,9 @@ figure {
   border-radius: var(--radius);
   background: var(--surface);
 }
-figure svg { display: block; width: 100%; height: auto; }
+/* スマホ幅では図の文字が小さくなりすぎるので、最小幅を決めて図だけ横スクロールさせる */
+figure { overflow-x: auto; }
+figure svg { display: block; width: 100%; min-width: 560px; height: auto; }
 figcaption {
   margin-top: 8px;
   color: var(--muted);
